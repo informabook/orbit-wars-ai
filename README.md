@@ -1,6 +1,6 @@
 # Orbit Wars: Replay-Based Learning, Automated Agent Search and Multi-Stage Validation
 
-**611th of 4,729 teams (Top 12.92%)**, as recorded in the post-competition report. [Read the 80-page V5 report](docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf) · [Reproduce a small experiment](docs/reproduce.md) · [Explore the data](DATA_DICTIONARY.md)
+**611th of 4,729 teams (Top 12.92%)**, as recorded in V5 and corroborated by the owner’s leaderboard capture. [Read the illustrated V5.1 report](docs/research_report/rapport_orbit_wars_v5_1_edition_publique.pdf) · [Reproduce a small experiment](docs/reproduce.md) · [Explore the data](DATA_DICTIONARY.md)
 
 Orbit Wars is a [Kaggle competition](https://www.kaggle.com/competitions/orbit-wars/) in which autonomous agents launch fleets to capture moving planets in two-player duels and four-player free-for-alls. The research problem was how to select policies that generalize when the opponent population changes. A candidate can improve against a local pool and still lose ground on a different ladder.
 
@@ -56,11 +56,25 @@ This starts four short official-simulator games using the supplied `hold` and `n
 - [Extract replay features, train and score](docs/reproduce.md#replay-features-and-ranking) using authorized local inputs. Phase 3 splits by replay, fits transformations on training rows and assigns tied scores half credit in ROC AUC.
 - [Regenerate plots and explore results](docs/reproduce.md#analyze-the-archive). The four notebooks walk through historical outcomes, evolutionary lineage, validation failures and ranker limits.
 
+## Recovered historical methods
+
+* **Beast Lab.** The original diagnostic rules link replay failures to weighted candidate families, typed parameter patches and strict multi-stage simulator checks.
+* **Intelligent Evolution V6.** Original finalist brackets, eight strategic mutation templates and two multi-parent combination strategies are available through explicit local policies.
+* **OrbitLab.** The original scheduler and snapshot analysis work with explicit local inputs. The new adapter adds parallel execution and resumable attempt records.
+
+~~~text
+orbit-history intelligent-v6 hold nearest --workers 2 --out local-runs/v6
+~~~
+
+Run the complete [bounded examples](docs/historical-workflows.md). The [historical coverage matrix](HISTORICAL_COVERAGE.md) records each source, selected ranges, adaptation and remaining exclusion.
+
 ## Research report and evidence
 
-[**Orbit Wars V5 post-competition report**](docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf) · Florent Schobyn · 15 July 2026 · 80 pages · French
+[**Orbit Wars V5.1 public edition**](docs/research_report/rapport_orbit_wars_v5_1_edition_publique.pdf) · Florent Schobyn · original report dated 15 July 2026 · November 2026 edition · 90 pages · French
 
-The archived report explains the heuristic experiments, ranking attempts, search and validation results, and retrospective reading of winning reinforcement learning systems. Its [release assessment and methodological note](docs/research_report/PUBLICATION_ASSESSMENT.md) identifies retrospective corrections and records what was checked. The [capture evidence index](assets/README.md) distinguishes submission-name evidence, one replay and the unverified final leaderboard row.
+The edition contains the complete historical report and a ten-figure appendix. Its title page gives the author’s academic status in November 2026. The [exact original V5](docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf) is preserved separately.
+
+The archived report explains the heuristic experiments, ranking attempts, search and validation results, and retrospective reading of winning reinforcement learning systems. Its [release assessment and methodological note](docs/research_report/PUBLICATION_ASSESSMENT.md) identifies retrospective corrections and records what was checked. The [capture evidence index](assets/README.md) distinguishes submission-name evidence, one replay and the later leaderboard row corroborating rank 611. The row does not establish which binary Kaggle received.
 
 ## Repository map
 
@@ -74,13 +88,13 @@ The archived report explains the heuristic experiments, ranking attempts, search
 
 ## Limits and follow-up research
 
-The exact replay batch, original Kaggle runtime and final submission bytes have not been reconstructed. The framework uses simplified mutations, Fast-only selection in search, bounded budgets, a single-file third-party agent adapter and exploratory bootstrap intervals. No end-to-end learned gameplay policy has been demonstrated. The documented Kaggle rank remains a historical record.
+The exact replay batch, original Kaggle runtime and final submission bytes have not been reconstructed. The Phase 3 quickstart uses simplified mutations and Fast-only selection in search. The recovered workflows add historical strategies and guide search with bounded budgets, a single-file third-party agent adapter and exploratory bootstrap intervals. No end-to-end learned gameplay policy has been demonstrated. The documented Kaggle rank remains a historical record.
 
 A useful follow-up would freeze time-separated replay and opponent pools, run seat-balanced comparisons across disjoint seeds and test a nonzero ranker coefficient against a fixed heuristic baseline. Episode-level splits help with near-duplicate and distribution-shift questions, but cannot establish performance against the final historical field.
 
 ## Citation, credits and license
 
-Cite Florent Schobyn, *Orbit Wars: Replay-Based Learning, Automated Agent Search and Multi-Stage Validation*, v0.3.0. [Citation metadata](CITATION.cff)
+Cite Florent Schobyn, *Orbit Wars: Replay-Based Learning, Automated Agent Search and Multi-Stage Validation*, v0.3.1. [Citation metadata](CITATION.cff)
 
 Thanks to Kaggle for the competition and simulator, to the baseline authors and to the competitors who published their solutions. The report’s discussion of winning RL systems credits their authors. [Third-party notices](THIRD_PARTY_NOTICES.md)
 

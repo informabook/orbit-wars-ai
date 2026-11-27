@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.1 — Historical method fidelity and V5.1
+
+- Recovered original Beast Lab replay diagnostics, failure guidance and variant mutation. Connected them to strict seeded validation through a local adapter.
+- Restored V6 brackets with original strategy templates. Exposed original OrbitLab scheduling and diagnostics with new bounded local execution, checkpointing and packaging.
+- Added the 90-page French V5.1 report with the academic correction and ten new figures. Retained the 80-page original and the archived evidence.
+- Recorded the owner-supplied evidence corroborating rank 611.
+
 ## 0.3.0 — Reusable research framework
 
 - Finalized the Phase 3 public scope under MIT for original contributions. Preserved third-party attribution, unresolved-source decisions and the experiment fingerprints.

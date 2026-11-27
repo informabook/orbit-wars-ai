@@ -36,7 +36,7 @@ b444dc65423bf5288fc0e5a463811ad02ec81123c54c1dab01a21273d3a7a5e4
 | FlowDiff | A public candidate page displays Apache 2.0 and credits a private parent notebook. The local FlowDiff notebook lacks a verified match to that page or revision. | Find the upstream chain and compare the cells. There is no evidence establishing a FlowDiff dependency of this specific final archive. |
 | Other external policies | The heuristic and exp34 URLs occur in local notebooks. The local notebooks labeled 1266 and 1335.5 have no verified original revision. | Resolve original authorship and inherited parts for each prospective opponent or baseline. |
 
-The actual Kaggle result and the local binary have separate evidence. The V5 report documents the finish and archive name. The public competition page gives the team count. Submission metadata and binary identity still need confirmation.
+The actual Kaggle result and the local binary have separate evidence. The V5 report documents the finish and archive name. The public competition page gives the team count. The later owner-supplied Kaggle leaderboard capture corroborates rank 611. Submission metadata and binary identity still need confirmation.
 
 ## Data and visuals
 
@@ -65,3 +65,11 @@ The root [MIT license](LICENSE) applies to Florent Schobyn’s original code, do
 | Kaggle UI and game captures | Reviewed privately, with contents and scope documented in the [asset index](assets/README.md). The audit did not verify reusable permission for the service artwork. |
 
 The public file inventory is at [docs/release/PUBLIC_FILES.csv](docs/release/PUBLIC_FILES.csv). The [source register](SOURCE_PROVENANCE.csv) describes source identity, license scope, retained portions and evidence gaps.
+
+## v0.3.1 historical recovery audit
+
+The [coverage matrix](HISTORICAL_COVERAGE.md) records inspected sources, hashes, selections and exclusions. The inspected V16–V18 analysis and guidance functions match by AST. V18 discovery adds filename hints and parameter markers. These describe compatibility and confer no rights to the named policies.
+
+The selected historic functions are owner-attributed research contributions. Original v0.3.0 excerpts stay byte-identical. Explicit replay loading, strict simulator callbacks, local checkpointing and stable template binding are v0.3.1 adaptations. MIT covers reviewed original contributions. The private candidate, raw replays, unresolved agent bodies, auto-submission code and serialized models are excluded.
+
+The [V5.1 public edition](docs/research_report/rapport_orbit_wars_v5_1_edition_publique.pdf) retains the report and adds two authorized changes. The [assessment](docs/research_report/PUBLICATION_ASSESSMENT.md) records the preservation checks. PyMuPDF is an optional, separately installed report-build dependency.

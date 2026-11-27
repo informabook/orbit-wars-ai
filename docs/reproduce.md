@@ -73,3 +73,18 @@ Training needs both classes in each split, enough replay groups, and finite nume
 Open the four notebooks from the repository or its notebook directory using a Python kernel with the analysis extra. Start with [notebook 1](../notebooks/01_competition_and_historical_results.ipynb), then [lineage](../notebooks/02_agent_evolution_and_lineage.ipynb), [validation](../notebooks/03_multistage_validation_and_failures.ipynb), and [replay learning](../notebooks/04_replay_learning_and_ranker_limits.ipynb). Each figure reads a bundled historical table. Use the [data dictionary](../DATA_DICTIONARY.md) for joins and missing values.
 
 Regenerate the release architecture and V14 plot with `python assets/render_figures.py` after installing the analysis extra. The architecture is conceptual, and the V14 curve reads recorded checkpoints. Open the [asset index](../assets/README.md) for the sources.
+
+## Use the recovered historical workflows
+
+The installation provides a separate `orbit-history` command. Follow the [advanced guide](historical-workflows.md) for failure-guided Beast Lab, V6 finalist brackets, OrbitLab scheduling, resumption and local diagnostics, and deterministic packaging. These workflows use bundled fixtures or explicitly supplied authorized inputs. The [coverage matrix](../HISTORICAL_COVERAGE.md) describes their origin and adaptations.
+
+## Regenerate the V5.1 report
+
+The optional report builder uses the exact V5 and fingerprinted tables. Create `local-runs` before running the commands.
+
+~~~text
+python -m pip install "matplotlib==3.10.8" "PyMuPDF==2.2"
+python docs/research_report/build_v51.py --out local-runs/orbit-wars-v5.1.pdf
+~~~
+
+See the [edition assessment](research_report/PUBLICATION_ASSESSMENT.md) for the precise changes and figure sources.

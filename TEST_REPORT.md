@@ -1,5 +1,26 @@
 # Test report
 
+## v0.3.1 recovery and V5.1 verification
+
+Local verification used Windows x64, CPython 3.13.9, Kaggle Environments 1.30.2 and Matplotlib 3.10.8. The report builder used PyMuPDF 2.2. **28 tests passed** (22 existing and six focused recovery tests). The new tests cover replay failure and guidance, bracket lineage and original template binding, resume and terminal evidence, local diagnostics and non-executing archive creation.
+
+~~~text
+python -m pip install -e ".[simulator,analysis,test]"
+python -m pytest -q -p no:cacheprovider
+orbit-history beast-guided configs/beast_replay_fixture.json --base configs/beast_fixture_agent.py --config configs/beast_validation_fixture.json --evaluate-all --out local-runs/guided
+orbit-history intelligent-v6 hold nearest --workers 2 --out local-runs/v6
+orbit-history orbitlab hold nearest --workers 2 --out local-runs/orbitlab
+orbit-history orbitlab-diagnose configs/beast_replay_fixture.json --out local-runs/diagnostics
+orbit-history package-agent configs/beast_fixture_agent.py --out local-runs/orbitlab/fixture.tar.gz
+python docs/research_report/build_v51.py --out local-runs/orbit-wars-v5.1.pdf
+~~~
+
+The guided run completed ten attempts across four stages using synthetic inputs. Forced evaluation exercised the gates, independently of whether the candidate passed them. The V6 example completed seven matches from its eight-game limit. OrbitLab completed two seat-swapped matches and reused both completed records on a second run. The synthetic replay yielded four OrbitLab snapshot rows. These runs verify the interfaces and provide no historical campaign evidence.
+
+The PDF audit compared text and pixel digests for all 79 unchanged body pages. It checked the first-page text difference, 10 appendix figures, retained outline and link counts, and exact original V5 SHA-256. The appendix charts read the same fingerprinted evidence files as the original candidate. The dated [edition assessment](docs/research_report/PUBLICATION_ASSESSMENT.md) records the changes and final PDF fingerprint.
+
+The earlier private v0.3.0 GitHub Actions runs passed on both Windows and Linux with 22 tests and four 2P/4P tournament matches on each platform and ref. The v0.3.1 workflow exercises the new tests and advanced commands in both jobs. [v0.3.0 main run](https://github.com/informabook/orbit-wars-ai/actions/runs/45991758201) · [v0.3.0 tag run](https://github.com/informabook/orbit-wars-ai/actions/runs/45992245556) · [Release CI](https://github.com/informabook/orbit-wars-ai/actions)
+
 ## v0.3.0 clean release verification
 
 Verified on 27 November 2026 using Windows x64 (build 26300), CPython 3.13.9 and pip 25.2. The fresh environment used Kaggle Environments 1.30.2, NumPy 2.2.6, Matplotlib 3.10.8, pytest 8.4.2, nbclient 0.10.2, ipykernel 7.1.0, setuptools 80.9.0 and wheel 0.45.1. Imports and tests outside the checkout used the non-editable install from the built wheel. The wheel metadata reports version 0.3.0 and license expression MIT.

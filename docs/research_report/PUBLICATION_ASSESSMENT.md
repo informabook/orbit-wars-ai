@@ -1,6 +1,17 @@
-# V5 report publication assessment
+# V5 and V5.1 publication assessment
 
-The public file is the **exact** 80-page French V5 report, dated 15 July 2026. The canonical private original, the source copy and the public copy share this SHA-256.
+The [90-page public edition](rapport_orbit_wars_v5_1_edition_publique.pdf) contains the complete historical report and two owner-approved changes.
+
+1. Page 1 reads “Étudiant en bac 2 informatique, École polytechnique de Louvain (EPL), UCLouvain”. The note identifies November 2026 as the date of that status. The report’s historical date remains 15 July 2026.
+2. Ten illustrated appendix pages follow the original 80. Captions distinguish archived measurements, documented chronology and conceptual methods. The [builder](build_v51.py) uses the preserved V5 PDF and released tables.
+
+Pages 2–80 match the archived PDF in extracted text and rendered pixels. Page 1 matches in text except for the authorized academic update. The original bookmarks and link annotations were retained. No existing body text, chapter, equation, table, figure, appendix or reference was removed.
+
+V5.1 PDF SHA-256: `c8a70df4eada94f1b57e928ca8ed320c72cd75b54b3bf2fa7a135f18d0d1d7da`.
+
+## Exact archived V5
+
+The archival file is the **exact** 80-page French V5 report, dated 15 July 2026. The canonical private original, the source copy and the public copy share this SHA-256.
 
 ~~~text
 fdf0fc33690978d97d288c4afd49c70e6635f56dec9919ba11176a355db14207
@@ -18,12 +29,12 @@ fdf0fc33690978d97d288c4afd49c70e6635f56dec9919ba11176a355db14207
 | Historical and potentially outdated claims | The original narrative describes qualitative trends, historical approximations and proposed future validation. Read it with the retrospective below. The dedicated report and the release tables serve different evidentiary roles. |
 | LaTeX sources | The Phase 1 search and targeted follow-up did not identify the matching TeX source. The release contains the canonical PDF. |
 
-**PDF modifications: none.** The release adds this companion assessment and a retrospective outside the report, preserving the original bytes and pagination. The interface screenshots are separate from the report. See the [asset evidence index](../../assets/README.md).
+**Archived V5 modifications: none.** The release adds this companion assessment and a retrospective outside the report, preserving the original bytes and pagination. The interface screenshots are separate from the report. See the [asset evidence index](../../assets/README.md).
 
 ## Retrospective note
 
 - **Match validity and seeds.** Phase 2 recovered 5,800 local outputs. The 1,962 OK labels lack per-agent terminal proof. Phase 3 rejects invalid simulator outcomes and requires the requested seed to be applied. These checks cannot retroactively validate the archived matches.
 - **Replay learning.** V14’s reported validation AUC of 0.886154 comes from its historical example-level split and approximate metric. Phase 3 groups rows by replay and handles tied scores. V14’s export coefficient was zero. The project’s historical leaderboard performance cannot be assigned to the learned ranker.
 - **Validation scope.** The archived Beast Lab run contains four negative Full-stage candidates and zero validated exports. Holdout appears in the design, but the historical evidence establishes no Holdout score.
-- **Leaderboard and score.** V5 states 611 / 4,729 and a public score around 958.5. The November 26 Kaggle submissions capture shows a completed record with the same archive name and a displayed score of 1068.9. The score snapshots may reflect different times or views. The capture does not establish their comparability, the team’s final rank, or the SHA-256 of the uploaded bytes. The release cites the rank as documented in V5 and omits a headline score.
+- **Leaderboard and score.** V5 states 611 / 4,729 and a public score around 958.5. The November 26 Kaggle submissions capture shows a completed record with the same archive name and a displayed score of 1068.9. The score snapshots may reflect different times or views. The separate leaderboard capture corroborates rank 611 and the displayed 1068.9. Neither capture establishes comparability between snapshots or the SHA-256 of the uploaded bytes. The release cites the rank as documented in V5 and omits a headline score.
 - **External RL systems.** The report analyzes the winning implementations retrospectively. Its diagrams and published-data comparisons are explanatory, and they do not attribute those systems or reported computations to this project. The [first-place write-up](https://www.kaggle.com/competitions/orbit-wars/writeups/1st-place-solution-scaling-reinforcement-learnin) and [second-place write-up](https://www.kaggle.com/competitions/orbit-wars/writeups/2nd-place-solution-for-orbit-wars) substantiate their authors’ model and training descriptions. Quantitative release graphics read the fingerprinted tables rather than reusing qualitative charts in the archival PDF.

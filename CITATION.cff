@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Schobyn
     given-names: Florent
-version: "0.3.0"
+version: "0.3.1"
 license: MIT
 abstract: "Historical evidence from Kaggle Orbit Wars and a separate post-competition research framework."
 keywords:

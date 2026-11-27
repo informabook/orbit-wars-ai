@@ -1,0 +1,31 @@
+{
+  "seed": 42,
+  "episode_steps": 24,
+  "max_games": 10,
+  "opponents": [
+    "guided-base"
+  ],
+  "stages": {
+    "fast": {
+      "seed": 100,
+      "games2": 1,
+      "games4": 1
+    },
+    "anti-mirage": {
+      "seed": 200,
+      "games2": 1,
+      "games4": 1,
+      "rounds": 2
+    },
+    "full": {
+      "seed": 300,
+      "games2": 1,
+      "games4": 1
+    },
+    "holdout": {
+      "seed": 400,
+      "games2": 1,
+      "games4": 1
+    }
+  }
+}

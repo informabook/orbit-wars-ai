@@ -15,6 +15,7 @@ jobs:
       PYTHONDONTWRITEBYTECODE: "1"
       LITELLM_LOCAL_MODEL_COST_MAP: "True"
       HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v5
@@ -25,6 +26,8 @@ jobs:
       - run: python -m pip check
       - run: python -m pytest -q -p no:cacheprovider
       - run: orbit-research tournament --config configs/tournament.json --out ci-tournament
+      - run: orbit-history intelligent-v6 hold nearest --workers 2 --out local-runs/ci-v6
+      - run: orbit-history beast-guided configs/beast_replay_fixture.json --base configs/beast_fixture_agent.py --config configs/beast_validation_fixture.json --evaluate-all --out local-runs/ci-guided
       - uses: actions/upload-artifact@v4
         with:
           name: quick-tournament-${{ matrix.os }}

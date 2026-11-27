@@ -13,3 +13,5 @@ The Phase 2 private handoff contains the exact exclusions register for 13,524 ph
 | Cache, generated experiments, environments and Git metadata | Keep them outside release. The four authored, output-free analysis notebooks are explicitly included. |
 
 Projected tables use stable aliases within each export. This preserves joins within that projection. It does not guarantee anonymity against matching other released score or timing data.
+
+The v0.3.1 audit adds method-specific exclusions. The owner’s leaderboard capture stays in the private handoff. Its documented rank and score are factual observations, and exact uploaded binary identity remains unresolved. The report’s archived V5 and separate V5.1 edition are authorized. [Historical coverage](../HISTORICAL_COVERAGE.md)

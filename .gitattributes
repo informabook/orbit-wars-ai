@@ -1,0 +1,4 @@
+# Preserve audited file fingerprints regardless of platform autocrlf settings.
+* -text
+*.pdf binary
+*.png binary

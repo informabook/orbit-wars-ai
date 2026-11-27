@@ -10,14 +10,15 @@ Regenerate the new assets with `python assets/render_figures.py` from the reposi
 
 ## Authentic capture review
 
-Three original 26 November 2026 captures were verified locally in the private handoff. The [Kaggle terms](https://www.kaggle.com/terms) govern site content. A reusable permission for the captured site interface and game visuals was not established during the audit. The release therefore provides source links and factual descriptions. The captures stay in the private evidence folder with their source fingerprints.
+Three 26 November 2026 captures and the later owner-supplied leaderboard row were checked in the private handoff. The [Kaggle terms](https://www.kaggle.com/terms) govern site content. A reusable permission for the captured site interface and game visuals was not established during the audit. The release therefore provides source links and factual descriptions. The captures stay in the private evidence folder with their source fingerprints.
 
 | Capture | What it establishes | Source |
 | --- | --- | --- |
 | Competition overview | Orbit Wars 2P and 4P description and a participation total of 4,729 teams. | [Kaggle overview](https://www.kaggle.com/competitions/orbit-wars/) |
 | Historical submissions | A completed entry named `best_generated_submission.tar.gz` and a second guided candidate entry. The displayed 1068.9 is a capture value. | [Kaggle submissions](https://www.kaggle.com/competitions/orbit-wars/submissions) may depend on the account. |
 | Authentic replay | The captured UI displays a two-player win for InformaBook2 at step 53 of the shown episode. One replay does not establish an aggregate performance result or final archive identity. | [Kaggle competition](https://www.kaggle.com/competitions/orbit-wars/) |
-| Final leaderboard row | An official capture of the project’s rank was not recovered. V5 is the evidence for 611 / 4,729. | [Kaggle leaderboard](https://www.kaggle.com/competitions/orbit-wars/leaderboard) |
+| Final leaderboard row | The owner supplied a capture showing InformaBook2 at rank 611 and displayed score 1068.9. It corroborates V5’s placement and contains no uploaded-file fingerprint. | [Kaggle leaderboard](https://www.kaggle.com/competitions/orbit-wars/leaderboard) |
 
 The release includes no official animation. Original source links and captures must retain their attribution if permission is later obtained.
 
+The V5.1 illustrated appendix adds schematics of Beast Lab, failure-guided candidate generation and 2P/4P routing, plus the documented chronology and quantitative views. Each archival plot reads the released evidence tables. [V5.1 public edition](../docs/research_report/rapport_orbit_wars_v5_1_edition_publique.pdf)

@@ -51,7 +51,7 @@ def make_game(**kwargs):
     return make("orbit_wars", **kwargs)
 
 
-def run_match(task, registry=None, make=make_game):
+def run_match(task, registry=None, make=make_game, *, bind_policy=bind):
     """Run one match. A missing/mismatched simulator seed is a failed attempt."""
     result = asdict(task)
     result.update(mode=f"{len(task.agents)}P", status="ERROR", terminal_statuses=[],
@@ -73,7 +73,7 @@ def run_match(task, registry=None, make=make_game):
                 return policy(observation, configuration)
             return agent
 
-        env.run([adapter(bind(ref, len(task.agents), registry or {})) for ref in task.agents])
+        env.run([adapter(bind_policy(ref, len(task.agents), registry or {})) for ref in task.agents])
         result["applied_seed"] = env.info.get("seed")
         result["turns"] = len(env.steps) - 1
         statuses, rewards, reason = terminal(env.steps[-1], len(task.agents))

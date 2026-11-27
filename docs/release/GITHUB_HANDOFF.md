@@ -1,5 +1,7 @@
 # GitHub release handoff
 
+The original procedure below documents the v0.3.0 private handoff. The existing commit and tag are preserved. The v0.3.1 release uses a subsequent audited commit. [v0.3.1 notes](RELEASE_NOTES_v0.3.1.md) · [Historical audit](../../HISTORICAL_COVERAGE.md)
+
 Use the following settings for the initial private repository. Run the commands after reviewing the local release candidate. Commands assume you are in the `orbit-wars-ai` directory with Git, GitHub CLI and Python available.
 
 | Setting | Value |
