@@ -1,0 +1,9 @@
+replay_id,label,weight,launch_score,travel_turns
+fixture-a,0,1,-1,4
+fixture-a,1,1,0.7,2
+fixture-b,0,1,-0.7,5
+fixture-b,1,1,1,3
+fixture-c,0,1,-0.4,6
+fixture-c,1,1,0.6,2
+fixture-d,0,1,-0.8,5
+fixture-d,1,1,0.9,4

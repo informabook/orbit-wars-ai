@@ -1,0 +1,7 @@
+{
+  "seed": 42,
+  "episode_steps": 24,
+  "max_games": 4,
+  "repeats": 2,
+  "lineups": [["hold", "nearest"], ["nearest", "hold", "nearest", "hold"]]
+}

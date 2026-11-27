@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "evidence": "historical_projections",
+  "tables": [
+    {
+      "table": "v14_training_curve.csv",
+      "rows": 131,
+      "sha256": "77edf70862655af2ce575d6eb1d2b5db2f61a153935bc939e5789a4a6eb2102d",
+      "sources": [
+        {
+          "original": "results (14).zip",
+          "sha256": "205d1834239a1c8a4a3baa7558ddb1c464b8950377b4cde957a38de7b738635f"
+        },
+        {
+          "original": "ow_ranker_weights.json / history",
+          "sha256": "539508850b116591ac2b0b8d3a953c77892314e6cef4d15784235da711d064b5"
+        }
+      ],
+      "projection": "Numeric checkpoints only. No weights, prediction samples, replay IDs or dataset."
+    },
+    {
+      "table": "beast_candidate_parameters.csv",
+      "rows": 17,
+      "sha256": "9c2d7fded1d3e0578a9482a1e58d681c23337a4fa15477342fce981552055d19",
+      "sources": [
+        {
+          "original": "fast_results.csv",
+          "sha256": "c5db52d1aa6a17e8faaf5d62b4b61afec93d776f51cc5e31b5cc2e7e3cd1d716"
+        },
+        {
+          "original": "full_results.csv",
+          "sha256": "1e7ff403d2881632bd33367a13cf47a7667999c11f4421ae50db99b83afe005c"
+        }
+      ],
+      "projection": "Candidate, parent and hybrid source aliases. Recorded parameter maps only, with no source code or paths."
+    },
+    {
+      "table": "beast_stage_results.csv",
+      "rows": 27,
+      "sha256": "f6d0f102eab7329c01c198fdee3fd6f619811ec12c555ee757e63269512cbba9",
+      "sources": [
+        {
+          "original": "fast_results.csv",
+          "sha256": "c5db52d1aa6a17e8faaf5d62b4b61afec93d776f51cc5e31b5cc2e7e3cd1d716"
+        },
+        {
+          "original": "full_results.csv",
+          "sha256": "1e7ff403d2881632bd33367a13cf47a7667999c11f4421ae50db99b83afe005c"
+        }
+      ],
+      "projection": "Only observed evaluations. Missing gate decisions and rejection reasons are left blank. No historical Holdout rows."
+    },
+    {
+      "table": "beast_anti_mirage_rounds.csv",
+      "rows": 14,
+      "sha256": "fbe8277f37aeccf747dfdad1c8c74add591aacdd1e3547d2f099a5518a865387",
+      "sources": [
+        {
+          "original": "fast_results.csv",
+          "sha256": "c5db52d1aa6a17e8faaf5d62b4b61afec93d776f51cc5e31b5cc2e7e3cd1d716"
+        }
+      ],
+      "projection": "Ordinal and numeric round aggregates only. Seeds were not recorded here."
+    },
+    {
+      "table": "beast_replay_statistics.csv",
+      "rows": 312,
+      "sha256": "0c77c3889b331bb44c372fc766167fedada0e00a426e9d7061f981cb14d56e08",
+      "sources": [
+        {
+          "original": "replay_metrics.csv",
+          "sha256": "2de453ed384d2456324a38bdd7f88db6e397f9e82c3326f9aef8a200d38feade"
+        }
+      ],
+      "projection": "Project-computed per-replay statistics. Original replay names, rewards and lead-loss reason strings excluded."
+    },
+    {
+      "table": "../evolution_candidates.csv",
+      "rows": 52,
+      "sha256": "e58fc1456984e12cb6a9414b71b65ff2204ebd8621ccf8a58dbba31b74512dd2",
+      "sources": [
+        {
+          "original": "evolution_candidates.csv",
+          "sha256": "ce21e7662ef749603eee8f1c9bec0b40660214eda1616432f0ba2b1f945595a4"
+        }
+      ],
+      "projection": "Existing Phase 2 selection. Candidate lineage or individual match seed, result and seconds."
+    },
+    {
+      "table": "../evolution_matches.csv",
+      "rows": 253,
+      "sha256": "236cc48200245f8131e9d17f819112d10d025683d0aaeac8ab93de022095cfc8",
+      "sources": [
+        {
+          "original": "evolution_matches.csv",
+          "sha256": "447b38c6f3edfc148d123d4dc3845b2186ee42937ba76726a938ab6690216598"
+        }
+      ],
+      "projection": "Existing Phase 2 selection. Candidate lineage or individual match seed, result and seconds."
+    },
+    {
+      "table": "orbitlab_individual_matches.csv",
+      "rows": 5800,
+      "sha256": "46f690170f1f268646ad49030fcde9d505bcf943354950ac6087194aeac2982c",
+      "sources": [
+        {
+          "original": "orbit_lab/work/match_outputs/*.json",
+          "ordered_source_digest": "d4957d0c39bfa59b4e22cafbc8a244374e5489627ffc766342372169dea5d6ef",
+          "input_count": 5800,
+          "digest_recipe": "SHA-256 of concatenated binary SHA-256 digests, filenames sorted lexically"
+        }
+      ],
+      "projection": "All 5,800 records. Replaced match and seat identities with table-local aliases. Dropped errors, original IDs, paths, action traces and snapshots."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "replays": 176,
+  "n": 134051,
+  "positives": 20633,
+  "negatives": 113418,
+  "best_val_auc": 0.8861540460117401,
+  "epochs_ran": 2600,
+  "trainer": "numpy_linear",
+  "export_coefficient": 0.0,
+  "recorded_self_play": [
+    {
+      "coef": 0.0,
+      "wins": 1,
+      "losses": 1,
+      "ties": 0,
+      "score": 0.0,
+      "reward_mean": 0.0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Exclusions
+
+The Phase 2 private handoff contains the exact exclusions register for 13,524 physical files and 7,975 archive members. Phase 3 revisits selected items through the [experiment manifest](../results/phase3/EXPERIMENT_MANIFEST.json). A new projection or historical code excerpt identifies the source and its fingerprint. Original source artifacts remain private except for the authorized [exact V5 report](research_report/rapport_orbit_wars_v5_post_cloture.pdf).
+
+| Class | Decision |
+| --- | --- |
+| Final candidate submission | Exact private copy with its prior SHA-256. The release contains candidate lineage and a report of the submission-name evidence. |
+| Kaggle screenshots and animation | Authentic captures are private. The public asset index links to Kaggle and documents what each capture supports. |
+| Third-party notebooks, agents and utility bundles | Link and attribute. Code revision, authorship and redistribution rights must be established before including derivative bodies. |
+| Raw replays, manifests and historical weights | Keep raw material local. Expose selected project-computed facts, a numeric learning curve and documented local import interfaces. |
+| Match and replay identifiers, agent files and errors | Phase 3 OrbitLab and Beast projections use scoped aliases and omit raw paths, error strings, episode IDs and source payloads. The Phase 2 evolutionary journal remains unchanged. |
+| Paths, registrations and personal data | Local registries reference the original source; they are excluded from release along with machine paths, account information, credentials and conversations. |
+| Cache, generated experiments, environments and Git metadata | Keep them outside release. The four authored, output-free analysis notebooks are explicitly included. |
+
+Projected tables use stable aliases within each export. This preserves joins within that projection. It does not guarantee anonymity against matching other released score or timing data.

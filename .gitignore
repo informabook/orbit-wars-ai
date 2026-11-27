@@ -1,0 +1,46 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+.kaggle/
+kaggle.json
+*.log
+work/
+private/
+Private handoff/
+venv/
+*.tar.gz
+*.zip
+*.ipynb
+*.pkl
+*.pickle
+*.pt
+*.pth
+*.ckpt
+replays/
+
+# Phase 3 local outputs and packaging artifacts
+local-runs/
+ci-tournament/
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+!notebooks/01_competition_and_historical_results.ipynb
+!notebooks/02_agent_evolution_and_lineage.ipynb
+!notebooks/03_multistage_validation_and_failures.ipynb
+!notebooks/04_replay_learning_and_ranker_limits.ipynb
+
+# Local registrations, recordings and credentials
+agents.json
+agent_registry.json
+*.registry.json
+local-replays/
+private-agents/
+.secrets/
+.envrc
+*.pem
+*.key
+credentials.json
