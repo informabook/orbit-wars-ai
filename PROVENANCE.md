@@ -58,7 +58,7 @@ The root [MIT license](LICENSE) applies to Florent Schobyn’s original code, do
 | Scope | Release decision |
 | --- | --- |
 | Original research tools, excerpts and reproducibility code | Included with MIT and the source records below. Historical Phase 3 code and evidence were retained byte-for-byte from the independently reviewed candidate. |
-| V5 report | Included as the exact 80-page original with owner approval, confirmed SHA-256 and visual review. The [assessment](docs/research_report/PUBLICATION_ASSESSMENT.md) records the release decision and separate retrospective. |
+| Historical V5 PDF | v0.3.0 included the exact 80-page original with owner approval and visual review. The historical tag and private archive preserve its verified bytes. The [assessment](docs/research_report/PUBLICATION_ASSESSMENT.md) records its provenance. |
 | Public references, Kaggle Environments, NumPy and Matplotlib | Linked or installed under their own terms. No third-party policy body or dependency is vendored. |
 | Producer V2, `orbit_lite`, FlowDiff and other derivative packages | Original lineages and public references are preserved. The exact applicable revision and full rights chain remain unresolved. Supply authorized agents through the [local registry](docs/reproduce.md#register-a-local-agent). |
 | Replay corpus, archived weights and the final candidate archive | Excluded from the release. Reported metrics, permitted historical table projections and SHA-256 evidence are retained. |
@@ -72,4 +72,8 @@ The [coverage matrix](HISTORICAL_COVERAGE.md) records inspected sources, hashes,
 
 The selected historic functions are owner-attributed research contributions. Original v0.3.0 excerpts stay byte-identical. Explicit replay loading, strict simulator callbacks, local checkpointing and stable template binding are v0.3.1 adaptations. MIT covers reviewed original contributions. The private candidate, raw replays, unresolved agent bodies, auto-submission code and serialized models are excluded.
 
-The [V5.1 public edition](docs/research_report/rapport_orbit_wars_v5_1_edition_publique.pdf) retains the report and adds two authorized changes. The [assessment](docs/research_report/PUBLICATION_ASSESSMENT.md) records the preservation checks. PyMuPDF is an optional, separately installed report-build dependency.
+The 90-page V5.1 report incorporates the authorized academic-status correction and new figures into the historical research record. The [assessment](docs/research_report/PUBLICATION_ASSESSMENT.md) records the preservation checks. PyMuPDF is an optional, separately installed report-build dependency.
+
+## Canonical research report in v0.3.2
+
+The root [Orbit Wars Research Report](Orbit_Wars_Research_Report.pdf) contains the exact 90-page V5.1 PDF released at v0.3.1. Its SHA-256 is `c8a70df4eada94f1b57e928ca8ed320c72cd75b54b3bf2fa7a135f18d0d1d7da`. The owner’s private archive retains the original V5 PDF and the [v0.3.0 tag](https://github.com/informabook/orbit-wars-ai/blob/v0.3.0/docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf) supplies the same input for reconstruction. [Reconstruction instructions](docs/reproduce.md#regenerate-the-research-report)

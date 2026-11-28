@@ -1,6 +1,14 @@
 # Test report
 
+## v0.3.2 canonical report checks
+
+The v0.3.2 wheel installed in an isolated Windows Python 3.13 environment. `pip check` found no broken requirements. All 28 tests passed from outside the checkout with the installed wheel and the Kaggle simulator enabled.
+
+The sole report PDF is `Orbit_Wars_Research_Report.pdf`. It has 90 pages and matches the v0.3.1 PDF byte for byte. Reconstruction from the V5 input extracted from the v0.3.0 tag produced identical bytes. The input matches the owner’s private original. The builder rejected an incorrect source and an attempt to overwrite the canonical output. The public file inventory, internal documentation links and Citation File Format metadata were checked. [GitHub Actions](https://github.com/informabook/orbit-wars-ai/actions)
+
 ## v0.3.1 recovery and V5.1 verification
+
+The commands in this section describe the v0.3.1 checkout. For the current builder interface, use the [reconstruction instructions](docs/reproduce.md#regenerate-the-research-report).
 
 Local verification used Windows x64, CPython 3.13.9, Kaggle Environments 1.30.2 and Matplotlib 3.10.8. The report builder used PyMuPDF 2.2. **28 tests passed** (22 existing and six focused recovery tests). The new tests cover replay failure and guidance, bracket lineage and original template binding, resume and terminal evidence, local diagnostics and non-executing archive creation.
 

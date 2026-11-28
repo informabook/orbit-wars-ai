@@ -32,11 +32,11 @@ The V5 report discusses overnight controllers and recovery on page 33. Four corr
 
 ## Report identity
 
-**Florent Schobyn, Orbit Wars research report, V5 post-competition, 15 July 2026.** 80 pages. See pages 45–46 for the rank and candidate archive name. Part III contains the retrospective.
+**Florent Schobyn, Orbit Wars Research Report, V5.1, 2026.** 90 pages. The report preserves the original date of 15 July 2026. See pages 45–46 for the rank and candidate archive name. Part III contains the retrospective.
 
 ```text
 SHA-256
-fdf0fc33690978d97d288c4afd49c70e6635f56dec9919ba11176a355db14207
+c8a70df4eada94f1b57e928ca8ed320c72cd75b54b3bf2fa7a135f18d0d1d7da
 ```
 
-The [exact V5 report](research_report/rapport_orbit_wars_v5_post_cloture.pdf) is included with the [retrospective and review](research_report/PUBLICATION_ASSESSMENT.md). The canonical private copy is retained.
+Read the [canonical research report](../Orbit_Wars_Research_Report.pdf) and the [retrospective and review](research_report/PUBLICATION_ASSESSMENT.md). The exact V5 source remains in the private archive and the historical tag.

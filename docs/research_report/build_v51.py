@@ -1,4 +1,4 @@
-"""Build the French V5.1 public edition from the canonical V5 and audited tables."""
+"""Reconstruct the Orbit Wars Research Report from the historical V5 and audited tables."""
 
 import argparse
 from collections import Counter
@@ -21,8 +21,7 @@ import pymupdf as pdf
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 RESULTS = ROOT / "results"
-V5 = HERE / "rapport_orbit_wars_v5_post_cloture.pdf"
-V51 = HERE / "rapport_orbit_wars_v5_1_edition_publique.pdf"
+CANONICAL_REPORT = ROOT / "Orbit_Wars_Research_Report.pdf"
 V5_SHA = "fdf0fc33690978d97d288c4afd49c70e6635f56dec9919ba11176a355db14207"
 BLUE, TEAL, AMBER, RED, INK, GRID = "#285085", "#197770", "#a86718", "#af4549", "#172a3f", "#d6e1e9"
 COLORS = (BLUE, TEAL, AMBER, RED)
@@ -34,8 +33,9 @@ def table(name):
         return list(csv.DictReader(stream))
 
 
-def check_sources():
-    assert hashlib.sha256(V5.read_bytes()).hexdigest() == V5_SHA
+def check_sources(source):
+    if hashlib.sha256(source.read_bytes()).hexdigest() != V5_SHA:
+        raise ValueError("The source must be the exact V5 PDF from the historical v0.3.0 tag")
     phase = RESULTS / "phase3"
     manifest = json.loads((phase / "EXPERIMENT_MANIFEST.json").read_text(encoding="utf-8"))
     for item in manifest["tables"]:
@@ -299,11 +299,11 @@ def cover(page):
     assert inform in page.get_text() and old not in page.get_text() and "15 juillet 2026" in page.get_text()
 
 
-def build(destination):
-    if destination.resolve() == V5.resolve():
-        raise ValueError("Keep the historical V5 PDF unmodified")
-    check_sources()
-    with TemporaryDirectory(prefix="orbit-v51-") as tmp, pdf.open(V5) as original:
+def build(source, destination):
+    if destination.resolve() in {source.resolve(), CANONICAL_REPORT.resolve()}:
+        raise ValueError("Choose a separate output path to protect the source and canonical report")
+    check_sources(source)
+    with TemporaryDirectory(prefix="orbit-v51-") as tmp, pdf.open(source) as original:
         assert len(original) == 80
         appendix = Path(tmp) / "appendix.pdf"
         metadata = {"Title": "Annexe illustrée du rapport Orbit Wars V5.1",
@@ -325,6 +325,8 @@ def build(destination):
 
 if __name__ == "__main__":
     cli = argparse.ArgumentParser(description=__doc__)
-    cli.add_argument("--out", type=Path, default=V51)
-    build(cli.parse_args().out)
+    cli.add_argument("--source", type=Path, required=True, help="exact historical V5 PDF from v0.3.0")
+    cli.add_argument("--out", type=Path, required=True, help="separate output path for the rebuilt PDF")
+    args = cli.parse_args()
+    build(args.source, args.out)
 

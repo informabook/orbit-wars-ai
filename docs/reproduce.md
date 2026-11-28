@@ -78,13 +78,15 @@ Regenerate the release architecture and V14 plot with `python assets/render_figu
 
 The installation provides a separate `orbit-history` command. Follow the [advanced guide](historical-workflows.md) for failure-guided Beast Lab, V6 finalist brackets, OrbitLab scheduling, resumption and local diagnostics, and deterministic packaging. These workflows use bundled fixtures or explicitly supplied authorized inputs. The [coverage matrix](../HISTORICAL_COVERAGE.md) describes their origin and adaptations.
 
-## Regenerate the V5.1 report
+## Regenerate the research report
 
-The optional report builder uses the exact V5 and fingerprinted tables. Create `local-runs` before running the commands.
+The [canonical report](../Orbit_Wars_Research_Report.pdf) is the 90-page V5.1 PDF. To rebuild it, use the audited tables in this checkout and take the exact 80-page V5 source from the [historical v0.3.0 tag](https://github.com/informabook/orbit-wars-ai/blob/v0.3.0/docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf). The builder checks the source fingerprint. Keep the source and reconstruction in the ignored `local-runs/` directory.
 
 ~~~text
+git fetch origin tag v0.3.0
+python -c "from pathlib import Path; import subprocess; p = Path('local-runs/v5-source.pdf'); p.parent.mkdir(exist_ok=True); p.write_bytes(subprocess.check_output(['git', 'show', 'v0.3.0:docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf']))"
 python -m pip install "matplotlib==3.10.8" "PyMuPDF==2.2"
-python docs/research_report/build_v51.py --out local-runs/orbit-wars-v5.1.pdf
+python docs/research_report/build_v51.py --source local-runs/v5-source.pdf --out local-runs/Orbit_Wars_Research_Report.pdf
 ~~~
 
-See the [edition assessment](research_report/PUBLICATION_ASSESSMENT.md) for the precise changes and figure sources.
+If working from a source ZIP, [download the raw V5 PDF](https://raw.githubusercontent.com/informabook/orbit-wars-ai/v0.3.0/docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf) into `local-runs/v5-source.pdf` and run the final two commands. The [report assessment](research_report/PUBLICATION_ASSESSMENT.md) records both PDF fingerprints and the figure sources.

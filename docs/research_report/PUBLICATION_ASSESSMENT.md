@@ -1,6 +1,6 @@
-# V5 and V5.1 publication assessment
+# Orbit Wars Research Report publication assessment
 
-The [90-page public edition](rapport_orbit_wars_v5_1_edition_publique.pdf) contains the complete historical report and two owner-approved changes.
+The [Orbit Wars Research Report](../../Orbit_Wars_Research_Report.pdf) is the primary scientific document of this repository. The canonical PDF is the exact 90-page V5.1 report. It contains the complete historical report and two owner-approved changes.
 
 1. Page 1 reads “Étudiant en bac 2 informatique, École polytechnique de Louvain (EPL), UCLouvain”. The note identifies November 2026 as the date of that status. The report’s historical date remains 15 July 2026.
 2. Ten illustrated appendix pages follow the original 80. Captions distinguish archived measurements, documented chronology and conceptual methods. The [builder](build_v51.py) uses the preserved V5 PDF and released tables.
@@ -11,13 +11,13 @@ V5.1 PDF SHA-256: `c8a70df4eada94f1b57e928ca8ed320c72cd75b54b3bf2fa7a135f18d0d1d
 
 ## Exact archived V5
 
-The archival file is the **exact** 80-page French V5 report, dated 15 July 2026. The canonical private original, the source copy and the public copy share this SHA-256.
+The owner’s private archive and the v0.3.0 tag preserve the exact 80-page French V5 report, dated 15 July 2026. Both sources share this SHA-256.
 
 ~~~text
 fdf0fc33690978d97d288c4afd49c70e6635f56dec9919ba11176a355db14207
 ~~~
 
-[Open the report](rapport_orbit_wars_v5_post_cloture.pdf). Pages 45–46 give the historical placement and score. Page 47 links to the leading teams’ primary write-ups. The report was included in this release candidate with the owner’s authorization for his original research material.
+Pages 45–46 give the historical placement and score. Page 47 links to the leading teams’ primary write-ups. For reconstruction use the [historical v0.3.0 source](https://github.com/informabook/orbit-wars-ai/blob/v0.3.0/docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf) and follow the [build instructions](../reproduce.md#regenerate-the-research-report).
 
 ## Review and modification log
 

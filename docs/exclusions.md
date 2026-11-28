@@ -1,6 +1,6 @@
 # Exclusions
 
-The Phase 2 private handoff contains the exact exclusions register for 13,524 physical files and 7,975 archive members. Phase 3 revisits selected items through the [experiment manifest](../results/phase3/EXPERIMENT_MANIFEST.json). A new projection or historical code excerpt identifies the source and its fingerprint. Original source artifacts remain private except for the authorized [exact V5 report](research_report/rapport_orbit_wars_v5_post_cloture.pdf).
+The Phase 2 private handoff contains the exact exclusions register for 13,524 physical files and 7,975 archive members. Phase 3 revisits selected items through the [experiment manifest](../results/phase3/EXPERIMENT_MANIFEST.json). A new projection or historical code excerpt identifies the source and its fingerprint. The exact V5 source PDF is preserved in the private archive and in the [historical tag](https://github.com/informabook/orbit-wars-ai/blob/v0.3.0/docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf). The current tree carries the [canonical research report](../Orbit_Wars_Research_Report.pdf).
 
 | Class | Decision |
 | --- | --- |
@@ -14,4 +14,4 @@ The Phase 2 private handoff contains the exact exclusions register for 13,524 ph
 
 Projected tables use stable aliases within each export. This preserves joins within that projection. It does not guarantee anonymity against matching other released score or timing data.
 
-The v0.3.1 audit adds method-specific exclusions. The owner’s leaderboard capture stays in the private handoff. Its documented rank and score are factual observations, and exact uploaded binary identity remains unresolved. The report’s archived V5 and separate V5.1 edition are authorized. [Historical coverage](../HISTORICAL_COVERAGE.md)
+The v0.3.1 audit adds method-specific exclusions. The owner’s leaderboard capture stays in the private handoff. Its documented rank and score are factual observations, and exact uploaded binary identity remains unresolved. The original report and released V5.1 research document have owner authorization. [Historical coverage](../HISTORICAL_COVERAGE.md)

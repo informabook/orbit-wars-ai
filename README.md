@@ -1,12 +1,18 @@
 # Orbit Wars: Replay-Based Learning, Automated Agent Search and Multi-Stage Validation
 
-**611th of 4,729 teams (Top 12.92%)**, as recorded in V5 and corroborated by the owner’s leaderboard capture. [Read the illustrated V5.1 report](docs/research_report/rapport_orbit_wars_v5_1_edition_publique.pdf) · [Reproduce a small experiment](docs/reproduce.md) · [Explore the data](DATA_DICTIONARY.md)
-
 Orbit Wars is a [Kaggle competition](https://www.kaggle.com/competitions/orbit-wars/) in which autonomous agents launch fleets to capture moving planets in two-player duels and four-player free-for-alls. The research problem was how to select policies that generalize when the opponent population changes. A candidate can improve against a local pool and still lose ground on a different ladder.
+
+**Competition result: 611th of 4,729 teams (Top 12.92%).**
+
+[**Read the Orbit Wars Research Report (PDF, 90 pages)**](Orbit_Wars_Research_Report.pdf)
+
+Florent Schobyn’s research report is the project’s primary scientific contribution. It presents the experimental design, replay-based learning, agent search, validation results, unsuccessful approaches and retrospective analysis of the winning reinforcement-learning systems. The French report is dated 15 July 2026 and was updated in November 2026 as V5.1.
+
+[Reproduce a small experiment](docs/reproduce.md) · [Explore the historical data](DATA_DICTIONARY.md)
 
 ![Orbit Wars architecture showing the connections from baseline agents and replays to candidate search and validation](assets/research-architecture.png)
 
-*Conceptual workflow. The diagram shows the project’s experimental paths. The V5 report records the placement. The exact uploaded binary and which experimental features it used remain unverified.*
+*Conceptual workflow. The diagram shows the project’s experimental paths. The research report records the placement. The exact uploaded binary and which experimental features it used remain unverified.*
 
 ## Research contributions
 
@@ -68,13 +74,9 @@ orbit-history intelligent-v6 hold nearest --workers 2 --out local-runs/v6
 
 Run the complete [bounded examples](docs/historical-workflows.md). The [historical coverage matrix](HISTORICAL_COVERAGE.md) records each source, selected ranges, adaptation and remaining exclusion.
 
-## Research report and evidence
+## Research evidence and retrospective
 
-[**Orbit Wars V5.1 public edition**](docs/research_report/rapport_orbit_wars_v5_1_edition_publique.pdf) · Florent Schobyn · original report dated 15 July 2026 · November 2026 edition · 90 pages · French
-
-The edition contains the complete historical report and a ten-figure appendix. Its title page gives the author’s academic status in November 2026. The [exact original V5](docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf) is preserved separately.
-
-The archived report explains the heuristic experiments, ranking attempts, search and validation results, and retrospective reading of winning reinforcement learning systems. Its [release assessment and methodological note](docs/research_report/PUBLICATION_ASSESSMENT.md) identifies retrospective corrections and records what was checked. The [capture evidence index](assets/README.md) distinguishes submission-name evidence, one replay and the later leaderboard row corroborating rank 611. The row does not establish which binary Kaggle received.
+The [report assessment and methodological note](docs/research_report/PUBLICATION_ASSESSMENT.md) records the PDF’s provenance, archival sources and subsequent methodological corrections. The [capture evidence index](assets/README.md) distinguishes submission-name evidence, one replay and the later leaderboard row corroborating rank 611. The row does not establish which binary Kaggle received.
 
 ## Repository map
 
@@ -83,8 +85,9 @@ The archived report explains the heuristic experiments, ranking attempts, search
 | `orbit_wars_research/` | Historical excerpts and a separate `framework/` for post-competition corrections and reproducible interfaces. |
 | `configs/`, `tests/` | Bounded examples and regression tests. |
 | `results/`, `notebooks/` | Fingerprinted historical measurements and four executable analyses. |
-| `docs/research_report/`, `assets/` | Exact V5 report, release assessment, diagram and data-derived plots. |
-| `docs/release/` | v0.3.0 notes, publication steps and repository metadata. |
+| [Orbit_Wars_Research_Report.pdf](Orbit_Wars_Research_Report.pdf) | Canonical 90-page research report. |
+| `docs/research_report/`, `assets/` | Report reconstruction, source assessment, diagrams and data-derived plots. |
+| `docs/release/` | Release notes and public file inventory. |
 
 ## Limits and follow-up research
 
@@ -94,7 +97,7 @@ A useful follow-up would freeze time-separated replay and opponent pools, run se
 
 ## Citation, credits and license
 
-Cite Florent Schobyn, *Orbit Wars: Replay-Based Learning, Automated Agent Search and Multi-Stage Validation*, v0.3.1. [Citation metadata](CITATION.cff)
+Cite Florent Schobyn (2026), *Orbit Wars: journal de recherche, validation et post-mortem d’une compétition d’agents adversariaux*, V5.1, for the research. Cite Orbit Wars Research v0.3.2 when referencing the software release. [Citation metadata](CITATION.cff)
 
 Thanks to Kaggle for the competition and simulator, to the baseline authors and to the competitors who published their solutions. The report’s discussion of winning RL systems credits their authors. [Third-party notices](THIRD_PARTY_NOTICES.md)
 

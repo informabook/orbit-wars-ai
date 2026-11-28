@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.2 — Canonical research report
+
+- Moved the exact 90-page V5.1 PDF to the repository root as `Orbit_Wars_Research_Report.pdf` and made it the primary research citation.
+- Removed the older V5 PDF from the current tree. The private archive and v0.3.0 tag preserve the exact reconstruction input.
+- Updated README, citations, provenance, release notes and file inventory. The report builder now takes explicitly named source and output paths.
+
 ## 0.3.1 — Historical method fidelity and V5.1
 
 - Recovered original Beast Lab replay diagnostics, failure guidance and variant mutation. Connected them to strict seeded validation through a local adapter.

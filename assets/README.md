@@ -6,7 +6,7 @@
 | [V14 training curve](v14-training-curve.png) | Rendered from 131 archived checkpoints in [the V14 table](../results/phase3/v14_training_curve.csv). Original archived metrics with their original split. |
 | [Historical evaluation chart](../docs/figures/historical-results.png) | Existing project figure drawn from the recorded evolution attempts and Beast Lab Full-stage deltas. |
 
-Regenerate the new assets with `python assets/render_figures.py` from the repository root after installing the analysis extra. The historical chart uses `orbit-research plot-history`. The [research report](../docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf) remains a separate publication.
+Regenerate the new assets with `python assets/render_figures.py` from the repository root after installing the analysis extra. The historical chart uses `orbit-research plot-history`. The [Orbit Wars Research Report](../Orbit_Wars_Research_Report.pdf) provides the scientific context for the figures.
 
 ## Authentic capture review
 
@@ -21,4 +21,4 @@ Three 26 November 2026 captures and the later owner-supplied leaderboard row wer
 
 The release includes no official animation. Original source links and captures must retain their attribution if permission is later obtained.
 
-The V5.1 illustrated appendix adds schematics of Beast Lab, failure-guided candidate generation and 2P/4P routing, plus the documented chronology and quantitative views. Each archival plot reads the released evidence tables. [V5.1 public edition](../docs/research_report/rapport_orbit_wars_v5_1_edition_publique.pdf)
+The research report’s illustrated appendix contains schematics of Beast Lab, failure-guided candidate generation and 2P/4P routing, plus the documented chronology and quantitative views. Each archival plot reads the released evidence tables. [Research report](../Orbit_Wars_Research_Report.pdf)

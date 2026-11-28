@@ -1,13 +1,22 @@
 cff-version: 1.2.0
-message: "Please cite this research framework if it informs your work."
+message: "Please cite the Orbit Wars Research Report for the research and this software release for the framework."
 title: "Orbit Wars: Replay-Based Learning, Automated Agent Search and Multi-Stage Validation"
 type: software
 authors:
   - family-names: Schobyn
     given-names: Florent
-version: "0.3.1"
+version: "0.3.2"
 license: MIT
-abstract: "Historical evidence from Kaggle Orbit Wars and a separate post-competition research framework."
+abstract: "Research report, historical evidence and reusable experimental framework for Kaggle Orbit Wars."
+preferred-citation:
+  type: report
+  title: "Orbit Wars: journal de recherche, validation et post-mortem d’une compétition d’agents adversariaux"
+  authors:
+    - family-names: Schobyn
+      given-names: Florent
+  year: 2026
+  version: "5.1"
+  url: "https://github.com/informabook/orbit-wars-ai/blob/v0.3.2/Orbit_Wars_Research_Report.pdf"
 keywords:
   - orbit wars
   - multi-agent systems

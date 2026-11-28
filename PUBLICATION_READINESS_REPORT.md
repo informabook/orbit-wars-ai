@@ -1,8 +1,12 @@
-# Publication readiness — v0.3.1
+# Publication readiness — v0.3.2
+
+The root [Orbit Wars Research Report](Orbit_Wars_Research_Report.pdf) is the canonical 90-page PDF. Its fingerprint matches the v0.3.1 release. The original 80-page source is verified in the private archive and remains in the v0.3.0 tag for reconstruction. [PDF assessment](docs/research_report/PUBLICATION_ASSESSMENT.md) · [Current inventory](docs/release/PUBLIC_FILES.csv)
+
+## v0.3.1 historical recovery assessment
 
 The owner authorized public publication contingent on the fidelity, rights, confidentiality and technical checks. The [historical audit](HISTORICAL_COVERAGE.md) documents original methods, adaptations and exclusions. The public package uses reviewed project-owned code, authorized reports and projected evidence. The [technical record](TEST_REPORT.md) identifies checks and reproducibility limits.
 
-The [V5.1 report](docs/research_report/rapport_orbit_wars_v5_1_edition_publique.pdf) keeps pages 1–80 with the scoped academic correction and adds ten figures. The exact historical V5 report and recorded results remain intact. The owner’s capture corroborates the Kaggle ranking and remains private. The uploaded submission remains unidentified by bytes. Historical Holdout and a strategic contribution by the zero-weight V14 export remain unattested.
+The [Orbit Wars Research Report](Orbit_Wars_Research_Report.pdf) keeps pages 1–80 with the scoped academic correction and adds ten figures. The exact historical V5 report and recorded results remain intact. The owner’s capture corroborates the Kaggle ranking and remains private. The uploaded submission remains unidentified by bytes. Historical Holdout and a strategic contribution by the zero-weight V14 export remain unattested.
 
 ## Archived v0.3.0 readiness assessment
 
@@ -15,7 +19,7 @@ The [V5.1 report](docs/research_report/rapport_orbit_wars_v5_1_edition_publique.
 | Direct reproduction | The clean Windows environment built and installed the wheel, ran the bounded CLI workflows and exercised the simulator tests. The [test report](TEST_REPORT.md) records outcomes and commands. Linux CI is configured and awaits its first run. |
 | Partial reproduction | The archived V14 corpus, exact original runtime and final submitted bytes remain unresolved. The historical AUC is an action-ranking signal under an example split. The export coefficient was zero. |
 | Research extension | Users can register local single-file agents, create bounded matches and mutations, vary seeded opposition by stage, group replay data for ranker training, and analyze archived outcomes with the supplied notebooks. |
-| Report V5 | The release includes the [exact 80-page PDF](docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf) authorized by the owner. Its SHA-256 matches the private original. The [assessment and retrospective](docs/research_report/PUBLICATION_ASSESSMENT.md) record the figure and metadata review and reconcile the audit findings. |
+| Report V5 | The v0.3.0 release included the owner-authorized [exact 80-page PDF](https://github.com/informabook/orbit-wars-ai/blob/v0.3.0/docs/research_report/rapport_orbit_wars_v5_post_cloture.pdf). Its SHA-256 matches the private original. The [assessment and retrospective](docs/research_report/PUBLICATION_ASSESSMENT.md) record the figure and metadata review and reconcile the audit findings. |
 | Rights and privacy | [MIT](LICENSE) applies to original project contributions only. [Provenance](PROVENANCE.md) and [notices](THIRD_PARTY_NOTICES.md) preserve upstream scope. Unresolved third-party code, raw replays, weights, the candidate archive and private registries are outside the ZIP. The [asset index](assets/README.md) records the authentic captures held separately. |
 | Release surface | The ZIP was compared to the intended tree. Hashes, manifest counts, documentation links, image/PDF metadata and output-free notebooks were checked. The publish instructions are in [the release handoff](docs/release/GITHUB_HANDOFF.md). |
 
